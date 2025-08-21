@@ -70,9 +70,48 @@
 <!-- Text input for name -->
  <label for="name"> Your Name: </label>
  <br>
- <input type="text" name="name" id="name" placeholder="please enter your name">
+ <input type="text" name="name" id="name" placeholder="please enter your name" minlength="3" maxlength="50" required>
  <br>
- <!-- text input for feedback -->
+  <label for="email"> Email: </label>
+ <br>
+ <input type="email" name="email" id="email" required>
+ <br>
+ <label for="phone" >phone:</label>
+ <br>
+ <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="(eg123-234-4567)">
+ <br>
+ <!-- url input type -->
+ <label for="website">Your website:(optional)</label>
+ <br>
+ <input type="url" name="url" id="url" placeholder="http://www.example.com">
+ <br>
+ <!-- rate their experience -->
+  <p>How would you rate this blog</p>
+  <!-- radio button -->
+   <input type="radio" name="rate" id="good" value="good" checked required>
+   <label for="good">Good</label>
+   <br>
+   <input type="radio" name="rate" id="neutral" value="neutral" required>
+   <label for="neutral">Neutral</label>
+   <br>
+   <input type="radio" name="rate" id="bad" value="bad" required>
+   <label for="bad">Bad</label>
+   <br><br>
+   <!-- news letter sign up -->
+    <!-- checkbox -->
+  <input type="checkbox" name="newsletter" id="newsletter" value="yes" checked>
+  <label for="newsletter">signup for our news letter</label>
+  <br><br>
+  <!-- dropdown tag -->
+  <!-- news letter topic -->
+   <label for="topic">News letter topic</label>
+   <select name="topic" id="topic">
+   <option value="">please choose option</option>
+   <option value="general">General</option>
+   <option value="suggetion">Suggetion</option>
+   </select>
+   <br><br>
+  <!-- text input for feedback -->
   <label for="feedback">Your Thoughts:</label>
   <br>
   <Textarea name="feedback" id="feedback" cols="30" rows="5"></Textarea>
